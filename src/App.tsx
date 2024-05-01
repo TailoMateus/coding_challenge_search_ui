@@ -1,23 +1,14 @@
-import React from 'react';
-
-type SearchResult = {
-  id: string;
-  title: string;
-  url: string;
-  description: string;
-  category: 'VIDEOS' | 'PLAYLISTS' | 'BLOG_POSTS';
-};
+import Home from './screens/Home/Home'
 
 function App() {
-
-    return (
-        <div className="App">
-            <header className="App-header">
-                <h1>Search UI Challenge</h1>
-                [Your UI here]
-            </header>
-        </div>
-    );
+  return (
+    <div className="App">
+      <header>
+        <h1>Search UI Challenge</h1>
+        <Home />
+      </header>
+    </div>
+  );
 }
 
-export default App;
+export default App
